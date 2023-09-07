@@ -218,7 +218,7 @@
             <p class="lead">Get in touch:</p>
             <p>Email: <a href="mailto:m.cruzeiro.2001@gmail.com">m.cruzeiro.2001@gmail.com</a></p>
             <p class="lead">Download my CV:</p>
-            <a href="/files/CV - Miguel Luís Lima Cruzeiro.pdf" target="_blank" class="btn btn-outline-dark mt-0"><i class="fa-solid fa-download" style="margin-right: 5px;"></i>Curriculum Vitae</a>
+            <button onclick="downloadPDF()" class="btn btn-outline-dark mt-0"><i class="fa-solid fa-download" style="margin-right: 5px;"></i>Curriculum Vitae</button>
         </div>
     </div>
 </section>
@@ -378,6 +378,23 @@
         $('#myInput').trigger('focus')
     })
 </script>
+
+<script>
+    function downloadPDF() {
+        // Create a temporary link element
+        var link = document.createElement('a');
+    
+        // Set the URL of your PDF file
+        link.href = 'files/CV - Miguel Luís Lima Cruzeiro.pdf'; // Replace with the actual path to your PDF
+    
+        // Set the download attribute with the desired filename for the downloaded file
+        link.download = 'CV - Miguel Luís Lima Cruzeiro.pdf'; // Replace with your desired filename
+    
+        // Trigger a click event on the link to start the download
+        link.click();
+    }
+    </script>
+    
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
