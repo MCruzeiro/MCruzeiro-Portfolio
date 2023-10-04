@@ -59,10 +59,10 @@
 <body>
 
 <!-- Updated Header with Hover Effect and Home Link -->
-<header class="bg-dark text-white py-3" style="position: relative; z-index: 2;">
+<header class="bg-dark text-white py-3" style="position: fixed; top: 0; width: 100%; z-index: 2;">
     <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-            <h1 style="font-size: 1.5rem;"><a href="#home" class="text-white text-decoration-none">Miguel Cruzeiro \ Versão Teste</a></h1>
+            <h1 style="font-size: 1.5rem;"><a href="#" class="text-white text-decoration-none">Miguel Cruzeiro</a></h1>
             <nav>
                 <ul class="list-inline mb-0">
                     <li class="list-inline-item me-3">
@@ -82,6 +82,7 @@
 
 
 
+
 <!-- Hello Section -->
 <div class="hello" style="position: relative; height: 100vh; overflow: hidden; margin: 0;">
     <img src="img/viana3.jpg" class="img-fluid" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
@@ -95,7 +96,7 @@
 
    
 <!-- About Me Section -->
-<section id="about" class="py-5 bg-light">
+<section id="about" class="py-5 bg-light" style="padding-top: 110px !important;">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -107,7 +108,7 @@
             </div>
             <div class="col-md-6 text-center">
                 <div class="about-image">
-                    <img src="img/miguel4.JPG" class="rounded-circle" style="width: 600px; height: 500px;" alt="Your Image">
+                    <img src="img/miguel4.JPG" class="rounded-circle" style="max-width: 100%;" alt="Your Image">
                 </div>
             </div>
         </div>
@@ -116,7 +117,7 @@
 
 
 <!-- Portfolio Section -->
-<section id="portfolio" class="bg-light py-5 text-center">
+<section id="portfolio" class="bg-light py-5 text-center" style="padding-top: 110px !important;">
     <div class="container">
         <h2 class="section-header mb-3" style="font-size: 2.5rem; font-weight: bold;">Portfolio</h2>
         <div class="row justify-content-center">
@@ -148,7 +149,7 @@
                         <img src="img/maya.png" class="card-img-top" alt="Project 3" style="max-height: 300px;">
                     </a>
                     <div class="card-body">
-                        <h5 class="card-title text-center">Maya Animation</h5>
+                        <h5 class="card-title text-center">Maya Modelation/Animation</h5>
                     </div>
                 </div>
             </div>
@@ -172,12 +173,52 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-4 mb-3">
+                <div class="card portfolio-card smaller-card">
+                    <a class="text-decoration-none card-link" data-toggle="modal" data-target="#modal6">
+                        <img src="img/rv.png" class="card-img-top" alt="Project 3" style="min-height: 324px;">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Realidade Virtual, Aumentada e Mista</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card portfolio-card smaller-card">
+                    <a class="text-decoration-none card-link" data-toggle="modal" data-target="#modal7">
+                        <img src="img/mm.jpg" class="card-img-top" alt="Project 3" style="min-height: 324px;">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Sistemas Multimédia e Tecnologias Interativas</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card portfolio-card smaller-card">
+                    <a class="text-decoration-none card-link" data-toggle="modal" data-target="#modal8">
+                        <img src="img/cm.jpg" class="card-img-top" alt="Project 3" style="min-height: 324px;">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Tecnologias Web e Móvel</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card portfolio-card smaller-card">
+                    <a class="text-decoration-none card-link" data-toggle="modal" data-target="#modal9">
+                        <img src="img/scenebuilder.png" class="card-img-top" alt="Project 3" style="min-height: 324px;">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Scene Builder JavaFx</h5>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
 <!-- Contact Section -->
-<section id="contact" class="py-5 text-center bg-light">
+<section id="contact" class="py-5 text-center bg-light" style="padding-top: 110px !important;">
     <div class="container">
         <h2 class="section-header">Contact Me</h2>
         <!-- Social Network Icons with text -->
@@ -189,7 +230,7 @@
                 </a>
             </div>
             <div class="col-md-1 mb-3">
-                <a href="#" class="text-decoration-none">
+                <a href="https://www.instagram.com/miguel.cruzeiro/" class="text-decoration-none">
                     <i class="fab fa-instagram text-dark fa-3x d-block mb-2"></i>
                     <span class="text-dark">Instagram</span>
                 </a>
@@ -238,10 +279,9 @@
                 </div>
                 <!-- Adicione outras informações aqui -->
                 <div class="modal-body">
-                    <p>Desenvolvimento Web de uma Plataforma de Gestão de Projetos
-                        para a Escola Inclusiva em parceria com a empresa Dynamo10/Gulbenkian. <br>
-                        Projeto Final do Curso de Engenharia da Computação Gráfica e Multimédia. <br>
-                        Ferramentas utilizadas: Framework Laravel 9 e Bootstrap 5 (com várias funcionalidades implementadas).
+                    <p>Web Development of a Project Management Platform for Escola Inclusiva in partnership with Dynamo10/Buleberg company. <br>
+                        Final Project of the Engenharia da Computação Gráfica e Multimédia Course. <br>
+                        Tools used: Laravel 9 Framework and Bootstrap 5 (with various implemented features).
                     </p>
                 </div>
             </div>
@@ -266,9 +306,8 @@
                 </div>
                 <!-- Adicione outras informações aqui -->
                 <div class="modal-body">
-                    <p>Animação premiada pela Geração Verdão produzida na Unidade Curricular de 
-                        Pós-Produção Visual. <br> Ferramentas utilizadas: Adobe Illustrator,
-                        Adobe After Effects e Adobe Premiere Pro.</p>
+                    <p>Animation awarded by Geração Verdão produced in the Visual Post-Production Course. <br> 
+                        Tools used: Adobe Illustrator, Adobe After Effects, and Adobe Premiere Pro.</p>
                 </div>
             </div>
             <div class="modal-footer">
@@ -282,7 +321,7 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Maya Animation</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Maya Modelation/Animation</h5>
                 <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -296,12 +335,37 @@
                     <div class="col-md-6">
                         <!-- Conteúdo do segundo vídeo -->
                         <div class="embed-responsive embed-responsive-16by9">
-                            <iframe width="1006" height="576" src="https://www.youtube.com/embed/VKRHaYNXcws" title="Sephiroth vs Cloud | Maya School Work 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                        </div>
+                            <iframe width="1006" height="576" src="https://www.youtube.com/embed/VKRHaYNXcws" title="Sephiroth vs Cloud | Maya School Work 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <img src="img/arco_viking.png" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/barco_viking.png" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <img src="img/tenda_viking.png" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/capacete_viking.png" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <img src="img/machado_viking.png" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="img/sala.png" class="img-fluid">
+                    </div>
                 </div>
                 <!-- Adicione outras informações aqui -->
                 <div class="modal-body">
-                    <p>Animações livres feitas no Maya 3D para a Unidade Curricular de Animação 3D.</p>
+                    <p>Free animations and 3D modeling done in Maya 3D for the 3D Modeling/Animation Course.</p>
                 </div>
             </div>
             <div class="modal-footer">
@@ -310,6 +374,8 @@
         </div>
     </div>
 </div>
+
+
 
 <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -319,15 +385,23 @@
                 <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <!-- Conteúdo do modal aqui -->
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe width="1007" height="576" src="https://www.youtube.com/embed/oF2Cd5D7AKo" title="Vídeo Promocional | Jornadas da Computação Gráfica e Multimédia 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- Conteúdo do primeiro vídeo -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/oF2Cd5D7AKo" title="Vídeo Promocional | Jornadas da Computação Gráfica e Multimédia 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <!-- Conteúdo da imagem -->
+                        <img src="img/poster.png" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
                 </div>
-                <!-- Adicione outras informações aqui -->
-                <div class="modal-body">
-                    <p>Vídeo Promocional feito para as XX Jornadas de Computação Gráfica e Multimédia<br> Ferramentas utilizadas: Adobe Illustrator,
-                        Adobe After Effects e Adobe Premiere Pro.</p></p>
-                </div>
+            </div>
+            <!-- Adicione outras informações aqui -->
+            <div class="modal-body">
+                <p>Promotional video made for the XX Jornadas da Computação Gráfica e Multimédia. <br> Tools used: Adobe Illustrator, Adobe After Effects, and Adobe Premiere Pro.</p>
+                <p>Individual design of a poster for the 18th Jornadas da Computação Gráfica e Multimédia.</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
@@ -336,11 +410,12 @@
     </div>
 </div>
 
+
 <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Geração Verdão</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Curta-Metragem</h5>
                 <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -350,7 +425,7 @@
                 </div>
                 <!-- Adicione outras informações aqui -->
                 <div class="modal-body">
-                    <p>Curta-Metragem produzida no 12º ano.</p></p>
+                    <p>Short film produced in the 12th grade.</p>
                 </div>
             </div>
             <div class="modal-footer">
@@ -359,6 +434,180 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Realidade Virtual, Aumentada e Mista</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="img/museu1.png" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/museu2.png" class="img-fluid">
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <p>Development of a Virtual Museum in Unity3D where the user can freely navigate through
+                         the created space and learn information about historical paintings.</p>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <img src="img/ra1.png" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/ra2.png" class="img-fluid" style="height: 300px;">
+                    </div>
+                </div>
+                <!-- Adicione outras informações aqui -->
+                <div class="modal-body">
+                    <p>Smartphone application with Augmented Reality features using Unity3D and Vuforia SDK. 
+                        It involves the appearance of a freely chosen 3D model that will appear on a selected surface when the smartphone's camera is pointed at it.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">SM / TI</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="1519" height="538" src="https://www.youtube.com/embed/IuTX5is91So" title="Trabalho Prático Phaser | Future Man" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="modal-body">
+                    <p>Development of a simple individual game using Phaser for the Multimedia Systems Course.</p>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-4">
+                        <img src="img/rp1.png" class="img-fluid">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/rp2.png" class="img-fluid">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/rp3.png" class="img-fluid">
+                    </div>
+                </div>
+                <!-- Adicione outras informações aqui -->
+                <div class="modal-body">
+                    <p>Creation of exercises using a Raspberry Pi. They involved connecting the RGB LED modules, 
+                        the laser emission module, and an infrared receiver module, respectively.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Tecnologias Web e Móvel</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row mt-3">
+                    <div class="col-md-4">
+                        <img src="img/tw1.png" class="img-fluid" style="margin-bottom: 10px;">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/tw2.png" class="img-fluid" style="margin-bottom: 10px;">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/tw3.png" class="img-fluid" style="margin-bottom: 10px;">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/tw4.png" class="img-fluid" style="margin-bottom: 10px;">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/tw5.png" class="img-fluid" style="margin-bottom: 10px;">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/tw6.png" class="img-fluid" style="margin-bottom: 10px;">
+                    </div>
+                </div>
+                <!-- Adicione outras informações aqui -->
+                <div class="modal-body">
+                    <p>Simulation of an online Technology Store using CRUD operations to insert and delete products. MySQL database used.</p>
+                </div>
+                <div class="modal-body">
+                    <iframe src="img/cm.pdf" style="width: 100%; height: 400px;"></iframe>
+                </div>
+                <div class="modal-body">
+                    <p>Smartphone app with Google Maps integration for finding parking locations in Viana do Castelo.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">JavaFX - Chinese Checkers</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row mt-3">
+                    <div class="col-md-4">
+                        <img src="img/cc1.png" class="img-fluid" style="margin-bottom: 10px;">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/cc2.png" class="img-fluid" style="margin-bottom: 10px;">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/cc3.png" class="img-fluid" style="margin-bottom: 10px;">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/cc4.png" class="img-fluid" style="margin-bottom: 10px;">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/cc5.png" class="img-fluid" style="margin-bottom: 10px;">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/cc6.png" class="img-fluid" style="margin-bottom: 10px;">
+                    </div>
+                </div>
+                <!-- Adicione outras informações aqui -->
+                <div class="modal-body">
+                    <p>Creation of the Chinese Checkers game using JavaFx's Scene Builder, involving real-time gameplay between two machines.
+                        <br>Complete information below.</p>
+                </div>
+                <div class="modal-body">
+                    <iframe src="img/ldp.pdf" style="width: 100%; height: 400px;"></iframe>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
 
 
 <script>
@@ -375,6 +624,18 @@
         $('#myInput').trigger('focus')
     })
     $('#modal5').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    })
+    $('#modal6').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    })
+    $('#modal7').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    })
+    $('#modal8').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    })
+    $('#modal9').on('shown.bs.modal', function () {
         $('#myInput').trigger('focus')
     })
 </script>
